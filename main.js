@@ -39,7 +39,6 @@ async function groupProductsByOrigin() {
         }
         const domesticTotal = domesticProducts.reduce((acc, product) => acc + product.price, 0);
         console.log(`Domestic cost: $${domesticTotal}`);
-
         console.log('\nImported:');
         for (let i = 0; i < importedProducts.length; i++) {
             const product = importedProducts[i];
