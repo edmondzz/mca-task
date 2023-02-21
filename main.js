@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 function getReceiptData() {
     return fetch('https://interview-task-api.mca.dev/qr-scanner-codes/alpha-qr-gFpwhsQ8fkY1')
         .then(response => response.json())
